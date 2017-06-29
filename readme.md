@@ -8,7 +8,7 @@ Each Campground has:
    * Name
    * Image
 
-# #Layout and Basic Styling
+## Layout and Basic Styling
 * Create our header and footer partials
 * Add in Bootstrap
 
@@ -95,7 +95,7 @@ Each Campground has:
 * Prevent an unauthenticated user from creating a campground
 * Save username+id to newly created campground
 
-# Editing Campgrounds
+## Editing Campgrounds
 * Add Method-Override
 * Add Edit Route for Campgrounds
 * Add Link to Edit Page
@@ -118,17 +118,17 @@ Each Campground has:
 <!--/campgrounds/:id/edit-->
 <!--/campgrounds/:id/comments/:comment_id/edit-->
 
-# Deleting Comments
+## Deleting Comments
 * Add Destroy route
 * Add Delete button
 
-# Authorization Part 2: Comments
+## Authorization Part 2: Comments
 * User can only edit his/her comments
 * User can only delete his/her comments
 * Hide/Show edit and delete buttons
 * Refactor Middleware
 
-# Adding in Flash!
+## Adding in Flash!
 * Demo working version
 * Install and configure connect-flash
 * Add bootstrap alerts to header
