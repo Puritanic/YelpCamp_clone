@@ -1,0 +1,92 @@
+<% include ../partials/header %>
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1><span class="glyphicon glyphicon-tent"></span> Welcome To YelpCamp!</h1>
+                <p>View our hand-picked campgrounds from all over the world</p>
+                <p>
+                    <a class="btn btn-primary btn-large" href="/index/new">Add new Campground</a>
+                </p>
+                <p>
+                    <form action="/index" method="GET" class="form-inline">
+                        <div class="form-group">
+                            <input type="text" name="search" placeholder="Campground search..." class="form-control">
+                            <input type="submit" value="Search" class="btn btn-default">
+                        </div>
+                    </form>
+                </p>
+            </div>
+        </header>
+        <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+            <div class="col-md-12">
+                <% if(noMatch) { %>
+                    <h3><%= noMatch %></h3>
+                        <form action="/index" method="GET" class="form-inline">
+                          <div class="form-group">
+                              <input type="text" name="search" placeholder="Campground search..." class="form-control">
+                              <input type="submit" value="Search" class="btn btn-default">
+                          </div>
+                        </form>
+                    <% }; %>
+            </div>
+            <% campgrounds.forEach(function(campground){ %>
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="<%= campground.image %>">
+                        <div class="caption">
+                            <h4> <%= campground.name %> </h4>
+                        </div>
+                        <p>
+                            <a class="btn btn-primary" href="/index/<%= campground._id %> ">More info...</a>
+                        </p>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-5">
+                        <ul class="pagination pagination-lg">
+                            <% if(output.pages.current > 1 && output.pages.hasPrev === true) { %>
+                                <li>
+                                    <a href="/index/page/<%= output.pages.prev %>" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                                <% } else { %>
+                                    <li>
+                                        <a class="btn btn-xs disabled" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">«</span>
+                                        </a>
+                                    </li>
+                                    <% } %>
+                                        <li>
+                                            <% for(var i = 1; i < output.pages.total +1; i++) { %>
+                                                <li>
+                                                    <a href="/index/page/<%= i %>">
+                                                        <%= i %>
+                                                    </a>
+                                                </li>
+                                                <% } %>
+                                        </li>
+                                        <% if(output.pages.current < output.pages.total && output.pages.hasNext === true) { %>
+                                            <li>
+                                                <a href="/index/page/<%= output.pages.next %>" aria-label="Next">
+                                                    <span aria-hidden="true">»</span>
+                                                </a>
+                                            </li>
+                                            <% } else { %>
+                                                <li>
+                                                    <a class="btn btn-xs disabled" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">»</span>
+                                                    </a>
+                                                </li>
+                                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <% include ../partials/footer %>
