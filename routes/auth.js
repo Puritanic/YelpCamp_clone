@@ -1,14 +1,11 @@
 var express     = require('express'),
     User        = require('../models/user'),
     Campground  = require('../models/campground'),
-<<<<<<< HEAD
     nodemailer  = require('nodemailer'),
     passport    = require('passport'),
     async       = require('async'),
     crypto      = require('crypto'), // is a part of a node, so we just require it
-=======
     passport    = require('passport'),
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
     router      = express.Router();
 
 //-----------------------------------------
@@ -74,7 +71,6 @@ router.get('/logout', function(req, res){
    res.redirect('/index');  
 });
 
-<<<<<<< HEAD
 // forgot password route
 
 router.get('/forgot', function(req, res) {
@@ -211,8 +207,6 @@ router.post('/reset/:token', function(req, res) {
   });
 });
 
-=======
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
 // User profile route
 
 router.get('/users/:id', function(req, res){
