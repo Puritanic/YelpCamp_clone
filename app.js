@@ -11,9 +11,13 @@ var methodOverride  = require('method-override'),
     flash           = require('connect-flash'),
     User            = require('./models/user'),
     app             = express();
+<<<<<<< HEAD
     
     // configure dotenv
     require('dotenv').load();
+=======
+   
+>>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
     
     // routes
 var campgroundsRoutes = require('./routes/campgrounds'),

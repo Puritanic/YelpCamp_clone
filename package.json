@@ -12,7 +12,10 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "connect-flash": "^0.1.1",
+<<<<<<< HEAD
     "dotenv": "^4.0.0",
+=======
+>>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "express-session": "^1.15.2",
@@ -25,8 +28,12 @@
     "passport-local-mongoose": "^4.0.0"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "async": "^2.5.0",
     "locus": "^2.0.1",
     "nodemailer": "^4.0.1"
+=======
+    "locus": "^2.0.1"
+>>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
   }
 }
