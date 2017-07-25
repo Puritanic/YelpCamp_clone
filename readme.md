@@ -1,252 +1,152 @@
-<<<<<<< HEAD
-#YelpCamp
 
-##Initial Setup
-=======
-### YelpCamp Clone
+## YelpCamp Clone
 https://yelp-camp-fin.herokuapp.com/
 
 ## Initial Setup
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Add Landing Page
-* Add Campgrounds Page that lists all campgrounds
+[x] Add Landing Page
+[x] Add Campgrounds Page that lists all campgrounds
 
 Each Campground has:
-   * Name
-   * Image
+   [x] Name
+   [x] Image
+   
+#### Layout and Basic Styling
+[x] Create our header and footer partials
+[x] Add in Bootstrap
 
-<<<<<<< HEAD
-##Layout and Basic Styling
-* Create our header and footer partials
-* Add in Bootstrap
+#### Creating New Campgrounds
 
-##Creating New Campgrounds
-=======
-## Layout and Basic Styling
-* Create our header and footer partials
-* Add in Bootstrap
+[x] Setup new campground POST route
+[x] Add in body-parser
+[x] Setup route to show form
+[x] Add basic unstyled form
 
-## Creating New Campgrounds
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Setup new campground POST route
-* Add in body-parser
-* Setup route to show form
-* Add basic unstyled form
+#### Style the campgrounds page
+[x] Add a better header/title
+[x] Make campgrounds display in a grid
 
-<<<<<<< HEAD
-##Style the campgrounds page
-* Add a better header/title
-* Make campgrounds display in a grid
+#### Style the Navbar and Form
+[x] Add a navbar to all templates
+[x] Style the new campground form
 
-##Style the Navbar and Form
-* Add a navbar to all templates
-* Style the new campground form
+#### Add Mongoose
+[x] Install and configure Mongoose
+[x] Setup campground model
+[x] Use campground model inside of our routes
 
-##Add Mongoose
-=======
-## Style the campgrounds page
-* Add a better header/title
-* Make campgrounds display in a grid
+#### Show Page
 
-## Style the Navbar and Form
-* Add a navbar to all templates
-* Style the new campground form
+[x] Review the RESTful routes we've seen so far
+[x] Add description to our campground model
+[x] Show db.collection.drop()
+[x] Add a show route/template
 
-## Add Mongoose
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Install and configure Mongoose
-* Setup campground model
-* Use campground model inside of our routes
+#### Refactor Mongoose Code
 
-<<<<<<< HEAD
-##Show Page
-=======
-## Show Page
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Review the RESTful routes we've seen so far
-* Add description to our campground model
-* Show db.collection.drop()
-* Add a show route/template
+[x] Create a models directory
+[x] Use module.exports
+[x] Require everything correctly!
 
-<<<<<<< HEAD
-##Refactor Mongoose Code
-=======
-## Refactor Mongoose Code
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Create a models directory
-* Use module.exports
-* Require everything correctly!
+#### Add Seeds File
+[x] Add a seeds.js file
+[x] Run the seeds file every time the server starts
 
-<<<<<<< HEAD
-##Add Seeds File
-* Add a seeds.js file
-* Run the seeds file every time the server starts
+#### Add the Comment model!
+[x] Make our errors go away!
+[x] Display comments on campground show page
 
-##Add the Comment model!
-* Make our errors go away!
-* Display comments on campground show page
+#### Comment New/Create
 
-##Comment New/Create
-=======
-## Add Seeds File
-* Add a seeds.js file
-* Run the seeds file every time the server starts
+[x] Discuss nested routes
+[x] Add the comment new and create routes
+[x] Add the new comment form
 
-## Add the Comment model!
-* Make our errors go away!
-* Display comments on campground show page
+#### Style Show Page
+[x] Add sidebar to show page
+[x] Display comments nicely
 
-## Comment New/Create
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Discuss nested routes
-* Add the comment new and create routes
-* Add the new comment form
+#### Finish Styling Show Page
+[x] Add public directory
+[x] Add custom stylesheet
 
-<<<<<<< HEAD
-##Style Show Page
-* Add sidebar to show page
-* Display comments nicely
+#### Auth Pt. 1 - Add User Model
+[x] Install all packages needed for auth
+[x] Define User model 
 
-##Finish Styling Show Page
-* Add public directory
-* Add custom stylesheet
+#### Auth Pt. 2 - Register
 
-##Auth Pt. 1 - Add User Model
-* Install all packages needed for auth
-* Define User model 
+[x] Configure Passport
+[x] Add register routes
+[x] Add register template
 
-##Auth Pt. 2 - Register
-=======
-## Style Show Page
-* Add sidebar to show page
-* Display comments nicely
+#### Auth Pt. 3 - Login
+[x] Add login routes
+[x] Add login template
 
-## Finish Styling Show Page
-* Add public directory
-* Add custom stylesheet
+#### Auth Pt. 4 - Logout/Navbar
 
-## Auth Pt. 1 - Add User Model
-* Install all packages needed for auth
-* Define User model 
+[x] Add logout route
+[x] Prevent user from adding a comment if not signed in
+[x] Add links to navbar
 
-## Auth Pt. 2 - Register
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Configure Passport
-* Add register routes
-* Add register template
+### Editing Campgrounds
 
-<<<<<<< HEAD
-##Auth Pt. 3 - Login
-* Add login routes
-* Add login template
+#### Auth Pt. 5 - Show/Hide Links
+[x] Show/hide auth links in navbar 
 
-##Auth Pt. 4 - Logout/Navbar
-=======
-## Auth Pt. 3 - Login
-* Add login routes
-* Add login template
+#### Refactor The Routes
+[x] Use Express router to reoragnize all routes
 
-## Auth Pt. 4 - Logout/Navbar
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Add logout route
-* Prevent user from adding a comment if not signed in
-* Add links to navbar
+#### Users + Comments
+[x] Associate users and comments
+[x] Save author's name to a comment automatically
 
-<<<<<<< HEAD
-##Auth Pt. 5 - Show/Hide Links
-* Show/hide auth links in navbar 
+#### Users + Campgrounds
+[x] Prevent an unauthenticated user from creating a campground
+[x] Save username+id to newly created campground
 
-##Refactor The Routes
-* Use Express router to reoragnize all routes
+#### Editing Campgrounds
 
-##Users + Comments
-* Associate users and comments
-* Save author's name to a comment automatically
+[x] Add Method-Override
+[x] Add Edit Route for Campgrounds
+[x] Add Link to Edit Page
+[x] Add Update Route
 
-##Users + Campgrounds
-* Prevent an unauthenticated user from creating a campground
-* Save username+id to newly created campground
+#### Deleting Campgrounds
+[x] Add Destroy Route
+[x] Add Delete button
 
-# Editing Campgrounds
-=======
-## Auth Pt. 5 - Show/Hide Links
-* Show/hide auth links in navbar 
+#### Authorization Part 1: Campgrounds
 
-## Refactor The Routes
-* Use Express router to reoragnize all routes
+[x] User can only edit his/her campgrounds
+[x] User can only delete his/her campgrounds
+[x] Hide/Show edit and delete buttons
 
-## Users + Comments
-* Associate users and comments
-* Save author's name to a comment automatically
+#### Editing Comments
 
-## Users + Campgrounds
-* Prevent an unauthenticated user from creating a campground
-* Save username+id to newly created campground
-
-## Editing Campgrounds
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Add Method-Override
-* Add Edit Route for Campgrounds
-* Add Link to Edit Page
-* Add Update Route
-
-<<<<<<< HEAD
-#Deleting Campgrounds
-* Add Destroy Route
-* Add Delete button
-
-#Authorization Part 1: Campgrounds
-=======
-## Deleting Campgrounds
-* Add Destroy Route
-* Add Delete button
-
-## Authorization Part 1: Campgrounds
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* User can only edit his/her campgrounds
-* User can only delete his/her campgrounds
-* Hide/Show edit and delete buttons
-
-<<<<<<< HEAD
-#Editing Comments
-=======
-## Editing Comments
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Add Edit route for comments
-* Add Edit button
-* Add Update route
+[x] Add Edit route for comments
+[x] Add Edit button
+[x] Add Update route
 
 <!--/campgrounds/:id/edit-->
 <!--/campgrounds/:id/comments/:comment_id/edit-->
 
-<<<<<<< HEAD
-#Deleting Comments
-* Add Destroy route
-* Add Delete button
+#### Deleting Comments
+[x] Add Destroy route
+[x] Add Delete button
 
-#Authorization Part 2: Comments
-=======
-## Deleting Comments
-* Add Destroy route
-* Add Delete button
+#### Authorization Part 2: Comments
 
-## Authorization Part 2: Comments
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* User can only edit his/her comments
-* User can only delete his/her comments
-* Hide/Show edit and delete buttons
-* Refactor Middleware
+[x] User can only edit his/her comments
+[x] User can only delete his/her comments
+[x] Hide/Show edit and delete buttons
+[x] Refactor Middleware
 
-<<<<<<< HEAD
-#Adding in Flash!
-=======
-## Adding in Flash!
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
-* Demo working version
-* Install and configure connect-flash
-* Add bootstrap alerts to header
+#### Adding in Flash!
 
-<<<<<<< HEAD
+[x] Demo working version
+[x] Install and configure connect-flash
+[x] Add bootstrap alerts to header
 
 RESTFUL ROUTES
 
@@ -264,5 +164,4 @@ SHOW    /campgrounds/:id
 
 NEW     campgrounds/:id/comments/new    GET
 CREATE  campgrounds/:id/comments      POST
-=======
->>>>>>> 87a9c339e1faea75494a45ac0c60412f6aca3b61
+
